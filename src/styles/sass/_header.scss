@@ -1,0 +1,23 @@
+header {
+  width: 100%;
+  height: convert-rem(212);
+  background-color: $primary-purple;
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+    padding: convert-rem(36) 0;
+    gap: 10;
+    .logo-header {
+      max-width: 100%;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  @include responsive(s) {
+    .content-header {
+      padding: convert-rem(24) 1rem;
+      gap: convert-rem(12);
+    }
+  }
+}

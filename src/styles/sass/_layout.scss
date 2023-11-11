@@ -1,0 +1,10 @@
+.container-root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $primary-gray;
+}
+
+.content-root {
+  max-width: $container-xl;
+  margin: 0 auto;
+}

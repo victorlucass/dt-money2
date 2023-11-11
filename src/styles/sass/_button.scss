@@ -1,0 +1,18 @@
+.btn-new-transaction {
+  border-radius: 5px;
+  background: $secondary-purple;
+  padding: convert-rem(12) convert-rem(32);
+  color: #fff;
+  font-family: Poppins;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: .5s ease all;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  @include responsive(s) {
+    padding: convert-rem(14) convert-rem(16);
+    font-size: convert-rem(14);
+  }
+}
