@@ -1,5 +1,3 @@
-import "animate.css";
-
 export function Logo() {
   return (
     <svg

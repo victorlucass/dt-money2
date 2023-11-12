@@ -1,0 +1,69 @@
+.content-card {
+  margin-top: -4rem;
+  display: flex;
+  gap: convert-rem(32);
+
+  @include responsive(l) {
+    overflow-x: auto;
+    margin-top: -6rem;
+    padding: 2rem;
+  }
+  @include responsive(m) {
+    overflow-x: auto;
+    margin-top: -6rem;
+    padding: 2rem;
+  }
+  @include responsive(s) {
+    overflow-x: auto;
+    padding: 2rem;
+    margin-top: -8rem;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: convert-rem(14);
+    width: convert-rem(352);
+    min-width: convert-rem(352);
+    height: convert-rem(136);
+    background-color: $white;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.5s ease all;
+    padding: convert-rem(25) convert-rem(18) convert-rem(18) convert-rem(32);
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    @include responsive(s) {
+      min-width: 80vw;
+      min-height: convert-rem(200);
+      gap: 2.75rem;
+      .card-content-value {
+        font-size: convert-rem(32);
+      }
+    }
+
+    .card-content-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title-card {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $gray-dark;
+      }
+    }
+
+    .card-content-value {
+      font-family: Poppins;
+      font-size: convert-rem(36);
+      font-weight: 400;
+      color: $gray-dark;
+
+      @include responsive(s) {
+        font-size: convert-rem(42);
+      }
+    }
+  }
+}

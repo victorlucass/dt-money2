@@ -13,6 +13,6 @@
 
   @include responsive(s) {
     padding: convert-rem(14) convert-rem(16);
-    font-size: convert-rem(14);
+    font-size: convert-rem(12);
   }
 }

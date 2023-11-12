@@ -16,7 +16,7 @@ header {
 
   @include responsive(s) {
     .content-header {
-      padding: convert-rem(24) 1rem;
+      padding: convert-rem(24) 0;
       gap: convert-rem(12);
     }
   }

@@ -24,6 +24,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container-card-root{
+  display: flex;
+  gap: convert-rem(32);
+}
+
 @import 'responsive.scss';
 @import 'colors.scss';
 @import 'typography.scss';
